@@ -11,8 +11,18 @@ function smallest(a, b, c) {
     // numbers.sort((x,y)=>x-y)
     // return numbers[0]
 //-----------------------------------------------------------
+
+    // let smallestN = a;
+    // if(b<smallestN){
+    //     smallestN = b;
+    // }
+    // if (c<smallestN){
+    //     smallestN = c;
+    // }
+    // return smallestN;
+
     try{
-        if(!isFinite(a,b,c)){
+        if(!isFinite(a)|| !isFinite(b)|| !isFinite(c)){
         throw new Error("enter a valid number")}
         
     } 
@@ -25,4 +35,4 @@ function smallest(a, b, c) {
 
 console.log(smallest(3, 4, 2)); 
 console.log(smallest(7, 2, 5)); 
-console.log(smallest("a", 1, 3)); 
+console.log(smallest(1, "a",  3)); 
